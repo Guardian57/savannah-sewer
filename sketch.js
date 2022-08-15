@@ -78,11 +78,16 @@ class hole {
 var holes = [];
 var idle = true;
 var time = new timer(2000);
-var scaleFactor = 0.5;
+var scaleFactor;
 
 
 function setup() {
-  createCanvas(1080 * scaleFactor, 1920 * scaleFactor);
+  var cHeight = windowHeight; //height of the window
+  var cWidth = windowHeight * (1080/1920); 
+  scaleFactor = cHeight/1920;
+  
+  
+  createCanvas(cWidth, cHeight);
   Bk_img = loadImage("img/Sewer_Prep_01_0002_Background.png");
   hole_img = loadImage("img/Sewer_Prep_01_0001_Background.png");
   stick_img = loadImage("img/Sewer_Prep_01_0000_Background.png");
