@@ -139,7 +139,7 @@ function draw() {
 
 
 function touchStarted(){
-  ellipse(mouseX, mouseY, 5, 5);
+  
   if(!fullscreen()){
     fullscreen(true); 
   }
