@@ -7,8 +7,12 @@ html, body {
 }
 
 canvas {
-  display: block;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
 }

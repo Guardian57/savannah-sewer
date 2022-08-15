@@ -80,6 +80,7 @@ var idle = true;
 var time = new timer(2000);
 var scaleFactor = 0.5;
 
+
 function setup() {
   createCanvas(1080 * scaleFactor, 1920 * scaleFactor);
   Bk_img = loadImage("img/Sewer_Prep_01_0002_Background.png");
