@@ -82,8 +82,8 @@ var scaleFactor;
 
 
 function setup() {
-  var cHeight = windowWidth; //height of the window
-  var cWidth = windowHeight * (1080/1920); 
+  var cHeight = innerHeight; //height of the window
+  var cWidth = innerHeight * (1080/1920); 
   scaleFactor = cHeight/1920;
   
   
