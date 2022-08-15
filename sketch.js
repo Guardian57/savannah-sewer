@@ -139,13 +139,19 @@ function draw() {
 
 
 function touchStarted(){
-  
   if(!fullscreen()){
     fullscreen(true); 
-  }
+  } 
   return false;
-  
 } 
+
+function windowResized(){
+  var cHeight = windowHeight; //height of the window
+  var cWidth = windowHeight * (1080/1920); 
+  scaleFactor = cHeight/1920;
+  
+  resizeCanvas(cWidth, cHeight);
+}
 
 function UniqueRandomNum(range, outputCount){
   
